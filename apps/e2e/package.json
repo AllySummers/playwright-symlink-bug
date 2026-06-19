@@ -1,0 +1,10 @@
+{
+  "name": "@repro/e2e",
+  "private": true,
+  "dependencies": {
+    "@repro/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.61.0"
+  }
+}

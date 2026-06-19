@@ -1,0 +1,8 @@
+{
+  "name": "@repro/core",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@repro/shared": "workspace:*"
+  }
+}
