@@ -7,3 +7,12 @@ _.path = [
   "{{config_root}}/node_modules/.bin",
   "{{config_root}}/apps/e2e/node_modules/.bin",
 ]
+
+[tasks.test]
+description = "Reproduce the bug — should fail with Cannot find module"
+run = "playwright test"
+
+[tasks.test-workaround]
+description = "Run with old async loader — should pass"
+env = { PLAYWRIGHT_FORCE_ASYNC_LOADER = "1" }
+run = "playwright test"

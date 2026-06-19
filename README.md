@@ -1,3 +1,5 @@
+Bug report: https://github.com/microsoft/playwright/issues/41371
+
 # playwright-pnpm-repro
 
 Minimal reproduction of a **Playwright `1.61.0` regression**: the new
