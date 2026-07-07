@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@repro/shared": "workspace:*"
+    "@repro/shared": "workspace:*",
+    "@repro/env": "workspace:*"
   }
 }

@@ -9,10 +9,10 @@ _.path = [
 ]
 
 [tasks.test]
-description = "Reproduce the bug — should fail with Cannot find module"
-run = "playwright test"
+description = "Reproduce the bug — should fail with SyntaxError: Cannot use import statement outside a module"
+run = "playwright test --config apps/e2e/playwright.config.mts"
 
 [tasks.test-workaround]
 description = "Run with old async loader — should pass"
 env = { PLAYWRIGHT_FORCE_ASYNC_LOADER = "1" }
-run = "playwright test"
+run = "playwright test --config apps/e2e/playwright.config.mts"
